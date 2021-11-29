@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/media/images/favicon.ico"
+    />
+    <!-- Link Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/11a1459669.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Link Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link styles -->
+    <link rel="stylesheet" href="./assets/styles/css/reset-css.css" />
+    <link rel="stylesheet" href="./assets/styles/css/global-style.css" />
+    <link rel="stylesheet" href="./assets/styles/css/main.css" />
+    <link rel="stylesheet" href="./assets/styles/css/responsive.css" />
+    <!-- Link script -->
+    <script src="./assets/script/Jquery.min.js"></script>
+    <script src="./assets/script/main.js"></script>
+    <title>Tiktok Application</title>
+  </head>
+  <body>
+    <div id="main">
+      <header class="header-container">
+        <div class="header">
+          <div class="logo">
+            <img src="./assets/media/images/Logo-Tiktok.svg" alt="" />
+          </div>
+          <div class="search">
+            <form action="" class="search-form">
+              <input
+                type="text"
+                placeholder="Search accounts and videos"
+                autocomplete="off"
+                class="search-input"
+              />
+              <span class="split"></span>
+              <div class="search-icon-wrapper">
+                <i class="fas fa-search search-icon"></i>
+              </div>
+            </form>
+          </div>
+          <div class="users">
+            <ul class="users-list">
+              <li class="item upload">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M22.1571 13.8359L21.9247 12.3786C21.4686 9.51917 18.9876 7.3335 16 7.3335C12.6863 7.3335 10 10.0197 9.99996 13.3334L10.0011 15.2304L8.11578 15.3398C6.19293 15.4513 4.66663 17.0482 4.66663 19.0002C4.66663 21.0252 6.30825 22.6668 8.33329 22.6668H15.3333V17.0813L14.1785 18.236C13.9182 18.4964 13.4961 18.4964 13.2357 18.236L12.7643 17.7646C12.504 17.5043 12.504 17.0822 12.7643 16.8218L15.862 13.7242C16.1223 13.4638 16.5444 13.4638 16.8048 13.7242L19.9024 16.8218C20.1628 17.0822 20.1628 17.5043 19.9024 17.7646L19.431 18.236C19.1706 18.4964 18.7485 18.4964 18.4882 18.236L17.3333 17.0811V22.6668H23C25.3932 22.6668 27.3333 20.7267 27.3333 18.3335C27.3333 16.151 25.7179 14.3423 23.6181 14.0437L22.1571 13.8359ZM8.33329 24.6668H15.3333H17.3333H23C26.4978 24.6668 29.3333 21.8313 29.3333 18.3335C29.3333 15.1411 26.9714 12.5005 23.8997 12.0636C23.2913 8.24881 19.9861 5.3335 16 5.3335C11.5817 5.3335 7.99996 8.91522 7.99996 13.3335L7.99996 13.3431C5.0255 13.5157 2.66663 15.9824 2.66663 19.0002C2.66663 22.1298 5.20368 24.6668 8.33329 24.6668Z"
+                  ></path>
+                </svg>
+              </li>
+              <li class="item message">
+                <img
+                  src="./assets/media/images/paper-plane-icon.svg"
+                  alt=""
+                  srcset=""
+                />
+              </li>
+              <li class="item inbox">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M24.0362 21.3333H18.5243L15.9983 24.4208L13.4721 21.3333H7.96047L7.99557 8H24.0009L24.0362 21.3333ZM24.3705 23.3333H19.4721L17.2883 26.0026C16.6215 26.8176 15.3753 26.8176 14.7084 26.0026L12.5243 23.3333H7.62626C6.70407 23.3333 5.95717 22.5845 5.9596 21.6623L5.99646 7.66228C5.99887 6.74352 6.74435 6 7.66312 6H24.3333C25.2521 6 25.9975 6.7435 26 7.66224L26.0371 21.6622C26.0396 22.5844 25.2927 23.3333 24.3705 23.3333ZM12.6647 14C12.2965 14 11.998 14.2985 11.998 14.6667V15.3333C11.998 15.7015 12.2965 16 12.6647 16H19.3313C19.6995 16 19.998 15.7015 19.998 15.3333V14.6667C19.998 14.2985 19.6995 14 19.3313 14H12.6647Z"
+                  ></path>
+                </svg>
+              </li>
+              <li class="item avatar">
+                <img src="./assets/media/images/user-avatar.jpg" alt="" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+    </div>
+  </body>
+</html>
