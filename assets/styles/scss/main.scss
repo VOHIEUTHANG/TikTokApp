@@ -4,8 +4,12 @@
   width: 100%;
   height: $header-height;
   box-shadow: 0 1px 0px 0px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  z-index: 100;
+  background: $primary-bg;
+  top: 0;
   .header {
-    max-width: 1100px;
+    max-width: $width;
     padding: 0 24px;
     height: 100%;
     margin: 0 auto;
@@ -86,5 +90,119 @@
         }
       }
     }
+  }
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+  width: $width;
+  margin: 0 auto;
+  margin-top: $header-height;
+  .sidebar-container {
+    flex: 0 0 356px;
+    padding: 0 8px;
+    .side-scroll {
+      // overflow: hidden scroll;
+    }
+    .sidebar {
+      padding-top: 20px;
+      margin-bottom: 8px;
+      .nav-item {
+        display: block;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 8px;
+        transition: all 0.2s linear;
+        color: #333;
+        &:hover {
+          background: rgba(22, 24, 35, 0.03);
+        }
+        &.active {
+          color: #fe2c55;
+          background: rgba(22, 24, 35, 0.03);
+          & > .nav-icon {
+            fill: #fe2c55;
+          }
+        }
+        .nav-icon {
+          width: 32px;
+          height: 32px;
+        }
+        .nav-name {
+          font-weight: 600;
+          text-transform: capitalize;
+          line-height: 32px;
+          font-size: 18px;
+          margin-left: 8px;
+        }
+      }
+      .suggested-user-header {
+        padding: 16px 8px 8px 8px;
+        font-weight: 600;
+        margin-bottom: 0;
+        font-size: 13px;
+        color: rgba(22, 24, 35, 0.75);
+        // line-height: 20px;
+        border-top: 1px solid rgb(230, 223, 223);
+      }
+      .user-list {
+        .user-item {
+          display: flex;
+          height: 48px;
+          align-items: center;
+          justify-self: flex-start;
+          &:hover {
+            background: rgba(22, 24, 35, 0.02);
+          }
+          &.no-check i {
+            display: none !important;
+          }
+          .user-avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            overflow: hidden;
+            & > img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          .user-infos {
+            margin-left: 12px;
+            .user-title {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              h4 {
+                max-width: 240px;
+                overflow: hidden;
+                font-weight: 500;
+                text-overflow: ellipsis;
+                font-size: 15px;
+                color: #333;
+                line-height: 22px;
+              }
+              & > i {
+                color: rgb(32, 213, 236);
+                margin-left: 6px;
+                font-size: 14px;
+              }
+            }
+            .user-des {
+              font-size: 11px;
+              color: rgba(22, 24, 35, 0.75);
+              line-height: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .trending-container {
+    flex: 0 0 692px;
+    min-height: 100vh;
   }
 }
