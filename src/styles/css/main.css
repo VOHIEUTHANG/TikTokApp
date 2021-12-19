@@ -81,7 +81,7 @@
   height: 32px;
   border-radius: 50%;
   overflow: hidden;
-  background-image: url("../../media/images/User-avater.jpg");
+  background-image: url("../../../assets/images/User-avater.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -378,6 +378,68 @@
 .main .trending-container .video-list .video-item .video-main .video-frame .video {
   width: 100%;
   height: auto;
+}
+.main .trending-container .video-list .video-item .video-main .video-frame .overlay {
+  display: none;
+  position: absolute;
+  inset: 0;
+  color: white;
+}
+.main .trending-container .video-list .video-item .video-main .video-frame .overlay .play-btn {
+  position: absolute;
+  padding: 10px;
+  cursor: pointer;
+  left: 20px;
+  bottom: 30px;
+}
+.main .trending-container .video-list .video-item .video-main .video-frame .overlay .play-btn > i {
+  font-size: 18px;
+  display: none;
+}
+.main .trending-container .video-list .video-item .video-main .video-frame .overlay .play-btn > i.fa-play {
+  display: block;
+}
+.main .trending-container .video-list .video-item .video-main .video-frame .overlay .play-btn.playing > i.fa-play {
+  display: none;
+}
+.main .trending-container .video-list .video-item .video-main .video-frame .overlay .play-btn.playing > i.fa-pause {
+  display: block;
+}
+.main .trending-container .video-list .video-item .video-main .video-frame .overlay .volumn {
+  position: absolute;
+  bottom: 30px;
+  padding: 10px;
+  cursor: pointer;
+  right: 20px;
+}
+.main .trending-container .video-list .video-item .video-main .video-frame .overlay .volumn i {
+  font-size: 18px;
+  display: none;
+}
+.main .trending-container .video-list .video-item .video-main .video-frame .overlay .volumn:not(.mute) > i.fa-volume-up {
+  display: block;
+}
+.main .trending-container .video-list .video-item .video-main .video-frame .overlay .volumn.mute > i.fa-volume-mute {
+  display: block;
+}
+.main .trending-container .video-list .video-item .video-main .video-frame .overlay .volumn:hover > .volumn-wrapper {
+  visibility: visible;
+  opacity: 1;
+}
+.main .trending-container .video-list .video-item .video-main .video-frame .overlay .volumn-wrapper {
+  position: absolute;
+  bottom: 100%;
+  transform-origin: right bottom;
+  transform: rotate(90deg) translateY(120%) translateX(0px);
+  right: 0;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .main .trending-container .video-list .video-item .video-main .interact {
   position: absolute;

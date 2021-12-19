@@ -82,7 +82,7 @@
             height: 32px;
             border-radius: 50%;
             overflow: hidden;
-            background-image: url("../../media/images/User-avater.jpg");
+            background-image: url("../../../assets/images/User-avater.jpg");
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -388,9 +388,73 @@
               width: 100%;
               height: auto;
             }
+            .overlay {
+              display: none;
+              position: absolute;
+              inset: 0;
+              color: white;
+              .play-btn {
+                position: absolute;
+                padding: 10px;
+                cursor: pointer;
+                left: 20px;
+                bottom: 30px;
+              }
+              .play-btn > i {
+                font-size: 18px;
+                display: none;
+              }
+              .play-btn > i.fa-play {
+                display: block;
+              }
+              .play-btn.playing > i.fa-play {
+                display: none;
+              }
+              .play-btn.playing > i.fa-pause {
+                display: block;
+              }
+
+              .volumn {
+                position: absolute;
+                bottom: 30px;
+                padding: 10px;
+                cursor: pointer;
+                right: 20px;
+                & i {
+                  font-size: 18px;
+                  display: none;
+                }
+                &:not(.mute) {
+                  & > i.fa-volume-up {
+                    display: block;
+                  }
+                }
+                &.mute > i.fa-volume-mute {
+                  display: block;
+                }
+                &:hover > .volumn-wrapper {
+                  visibility: visible;
+                  opacity: 1;
+                }
+              }
+              .volumn-wrapper {
+                position: absolute;
+                bottom: 100%;
+                transform-origin: right bottom;
+                transform: rotate(90deg) translateY(120%) translateX(-0px);
+                right: 0;
+                padding: 10px 20px;
+                border-radius: 25px;
+                background: rgba(0, 0, 0, 0.5);
+                visibility: hidden;
+                opacity: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+            }
           }
-          .overlay {
-          }
+
           .interact {
             position: absolute;
             bottom: 0;
@@ -414,19 +478,11 @@
                 background: #d2d2da;
               }
             }
-            .interact-item {
-            }
             .quantity {
               display: block;
               text-align: center;
               font-size: 13px;
               margin-top: 6px;
-            }
-            .heart {
-            }
-            .comments {
-            }
-            .share {
             }
           }
         }
