@@ -285,7 +285,151 @@
 .main .trending-container {
   flex: 0 0 692px;
   min-height: 100vh;
-  height: 10000px;
+  padding: 24px 0;
+  margin: 0 16px;
+}
+.main .trending-container .video-list {
+  width: 100%;
+  list-style: none;
+}
+.main .trending-container .video-list .video-item {
+  position: relative;
+  padding: 20px 0;
+  border-bottom: 1px solid #e6dfdf;
+}
+.main .trending-container .video-list .video-item .video-avatar {
+  display: inline-block;
+  float: left;
+}
+.main .trending-container .video-list .video-item .video-avatar > a {
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.main .trending-container .video-list .video-item .video-avatar > a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main .trending-container .video-list .video-item .video-main {
+  margin-left: 68px;
+  margin-right: 150px;
+}
+.main .trending-container .video-list .video-item .video-main .description {
+  flex: 1;
+}
+.main .trending-container .video-list .video-item .video-main .description .name {
+  color: black;
+  margin-right: 3px;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 24px;
+}
+.main .trending-container .video-list .video-item .video-main .description .name:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.main .trending-container .video-list .video-item .video-main .description .sub-text {
+  font-size: 14px;
+  color: #888;
+}
+.main .trending-container .video-list .video-item .video-main .description .main-title {
+  text-transform: capitalize;
+}
+.main .trending-container .video-list .video-item .video-main .description .hastag {
+  display: inline-block;
+  margin-left: 6px;
+}
+.main .trending-container .video-list .video-item .video-main .description .hastag > a {
+  color: black;
+  font-weight: 500;
+  font-size: 14px;
+}
+.main .trending-container .video-list .video-item .video-main .description .hastag > a:hover {
+  text-decoration: underline;
+}
+.main .trending-container .video-list .video-item .video-main .description .music-wrapper {
+  max-width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.main .trending-container .video-list .video-item .video-main .description .music-wrapper > i {
+  color: #555;
+}
+.main .trending-container .video-list .video-item .video-main .description .music-wrapper .song-name {
+  display: inline-block;
+  margin-left: 4px;
+  font-size: 14px;
+  color: #000000;
+  font-weight: 600;
+}
+.main .trending-container .video-list .video-item .video-main .description .music-wrapper .song-name:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.main .trending-container .video-list .video-item .video-main .video-frame {
+  position: relative;
+  margin-top: 12px;
+  max-width: 70%;
+}
+.main .trending-container .video-list .video-item .video-main .video-frame .video {
+  width: 100%;
+  height: auto;
+}
+.main .trending-container .video-list .video-item .video-main .interact {
+  position: absolute;
+  bottom: 0;
+  left: 105%;
+}
+.main .trending-container .video-list .video-item .video-main .interact .wrapper {
+  width: 50px;
+  height: 50px;
+  margin-top: 8px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e7e7e9;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.main .trending-container .video-list .video-item .video-main .interact .wrapper > i {
+  font-size: 20px;
+}
+.main .trending-container .video-list .video-item .video-main .interact .wrapper:hover {
+  background: #d2d2da;
+}
+.main .trending-container .video-list .video-item .video-main .interact .quantity {
+  display: block;
+  text-align: center;
+  font-size: 13px;
+  margin-top: 6px;
+}
+.main .trending-container .video-list .video-item .fllow-btn {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  padding: 0 10px;
+  border-radius: 4px;
+  border: 1px solid #fe2c55;
+  color: #fe2c55;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  min-width: 88px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.main .trending-container .video-list .video-item .fllow-btn:hover {
+  background: rgba(254, 44, 85, 0.06);
 }
 
 /*# sourceMappingURL=main.css.map */

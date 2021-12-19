@@ -4,11 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/png"
-      href="./assets/media/images/favicon.ico"
-    />
+    <link rel="icon" type="image/png" href="./assets/images/favicon.ico" />
     <!-- Link Fontawesome -->
     <script
       src="https://kit.fontawesome.com/11a1459669.js"
@@ -22,13 +18,13 @@
       rel="stylesheet"
     />
     <!-- Link styles -->
-    <link rel="stylesheet" href="./assets/styles/css/reset-css.css" />
-    <link rel="stylesheet" href="./assets/styles/css/global-style.css" />
-    <link rel="stylesheet" href="./assets/styles/css/main.css" />
-    <link rel="stylesheet" href="./assets/styles/css/responsive.css" />
+    <link rel="stylesheet" href="./src/styles/css/reset-css.css" />
+    <link rel="stylesheet" href="./src/styles/css/global-style.css" />
+    <link rel="stylesheet" href="./src/styles/css/main.css" />
+    <link rel="stylesheet" href="./src/styles/css/responsive.css" />
     <!-- Link script -->
-    <script src="./assets/script/Jquery.min.js"></script>
-    <script src="./assets/script/main.js"></script>
+    <script src="./src/script/Jquery.min.js"></script>
+    <script src="./src/script/main.js"></script>
     <title>Tiktok Application</title>
   </head>
   <body>
@@ -36,7 +32,7 @@
       <header class="header-container">
         <div class="header">
           <div class="logo">
-            <img src="./assets/media/images/Logo-Tiktok.svg" alt="" />
+            <img src="./assets/images/Logo-Tiktok.svg" alt="" />
           </div>
           <div class="search">
             <form action="" class="search-form">
@@ -71,7 +67,7 @@
               </li>
               <li class="item message">
                 <img
-                  src="./assets/media/images/paper-plane-icon.svg"
+                  src="./assets/images/paper-plane-icon.svg"
                   alt=""
                   srcset=""
                 />
@@ -172,10 +168,7 @@
                 <div class="suggested-user-header">Suggested accounts</div>
                 <a href="" class="user-item">
                   <div class="user-avatar">
-                    <img
-                      src="./assets/media/images/user-avatars/1.jpeg"
-                      alt=""
-                    />
+                    <img src="./assets/images/user-avatars/1.jpeg" alt="" />
                   </div>
                   <div class="user-infos">
                     <div class="user-title">
@@ -187,10 +180,7 @@
                 </a>
                 <a href="" class="user-item">
                   <div class="user-avatar">
-                    <img
-                      src="./assets/media/images/user-avatars/2.jpeg"
-                      alt=""
-                    />
+                    <img src="./assets/images/user-avatars/2.jpeg" alt="" />
                   </div>
                   <div class="user-infos">
                     <div class="user-title">
@@ -202,10 +192,7 @@
                 </a>
                 <a href="" class="user-item no-check">
                   <div class="user-avatar">
-                    <img
-                      src="./assets/media/images/user-avatars/3.jpeg"
-                      alt=""
-                    />
+                    <img src="./assets/images/user-avatars/3.jpeg" alt="" />
                   </div>
                   <div class="user-infos">
                     <div class="user-title">
@@ -217,10 +204,7 @@
                 </a>
                 <a href="" class="user-item">
                   <div class="user-avatar">
-                    <img
-                      src="./assets/media/images/user-avatars/4.jpeg"
-                      alt=""
-                    />
+                    <img src="./assets/images/user-avatars/4.jpeg" alt="" />
                   </div>
                   <div class="user-infos">
                     <div class="user-title">
@@ -232,10 +216,7 @@
                 </a>
                 <a href="" class="user-item">
                   <div class="user-avatar">
-                    <img
-                      src="./assets/media/images/user-avatars/5.jpeg"
-                      alt=""
-                    />
+                    <img src="./assets/images/user-avatars/5.jpeg" alt="" />
                   </div>
                   <div class="user-infos">
                     <div class="user-title">
@@ -253,10 +234,7 @@
                 <div class="suggested-user-header">Following accounts</div>
                 <a href="" class="user-item">
                   <div class="user-avatar">
-                    <img
-                      src="./assets/media/images/user-avatars/6.jpeg"
-                      alt=""
-                    />
+                    <img src="./assets/images/user-avatars/6.jpeg" alt="" />
                   </div>
                   <div class="user-infos">
                     <div class="user-title">
@@ -337,7 +315,66 @@
             </div>
           </div>
         </div>
-        <div class="trending-container"></div>
+        <div class="trending-container">
+          <div class="video-list">
+            <div class="video-item">
+              <div class="fllow-btn">Follow</div>
+              <div class="video-avatar">
+                <a href="#">
+                  <img src="./assets/images/user-1.jpeg" alt="" />
+                </a>
+              </div>
+              <div class="video-main">
+                <div class="description">
+                  <div class="acc-name-wrapper">
+                    <span class="name">sweetfoodr</span>
+                    <span class="sub-text">Sweet Food</span>
+                  </div>
+                  <div class="title-wrapper">
+                    <span class="main-title">Góc đồ ăn</span>
+                    <div class="hastag">
+                      <a href="#">#food</a>
+                      <a href="#">#cake</a>
+                      <a href="#">#cooking</a>
+                    </div>
+                  </div>
+                  <div class="music-wrapper">
+                    <i class="fas fa-music"></i>
+                    <div class="song-name">Mood - Remix - Zero</div>
+                  </div>
+                </div>
+                <div class="video-frame">
+                  <video
+                    src="https://v16-webapp.tiktok.com/381e4740e95e87c19eb6cab701aa9a25/61bf3600/video/tos/alisg/tos-alisg-pve-0037/7048cba9c51743b8b16362e647c524b1/?a=1988&br=3736&bt=1868&cd=0%7C0%7C1&ch=0&cr=0&cs=0&cv=1&dr=0&ds=3&er=&ft=Yu12_Fpckag3-I&l=20211219073858010245244167078C8049&lr=tiktok_m&mime_type=video_mp4&net=0&pl=0&qs=0&rc=anZvZjQ6ZnA1OTMzODgzNEApOWc3aDZpNzw2NzY5Ozw7OWcxMC9gcjRnMGxgLS1kLy1zcy1jYDUtXy9iXy0vNDNhYGM6Yw%3D%3D&vl=&vr="
+                    class="video"
+                    controls
+                  ></video>
+                  <div class="overlay"></div>
+                  <div class="interact">
+                    <div class="interact-item heart">
+                      <div class="wrapper">
+                        <i class="fas fa-heart"></i>
+                      </div>
+                      <span class="quantity">999k</span>
+                    </div>
+                    <div class="interact-item comments">
+                      <div class="wrapper">
+                        <i class="fas fa-comment-dots"></i>
+                      </div>
+                      <span class="quantity">100k</span>
+                    </div>
+                    <div class="interact-item share">
+                      <div class="wrapper">
+                        <i class="fas fa-share-alt"></i>
+                      </div>
+                      <span class="quantity">5000</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>
