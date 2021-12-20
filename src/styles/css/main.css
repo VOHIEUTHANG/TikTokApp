@@ -374,6 +374,7 @@
   position: relative;
   margin-top: 12px;
   max-width: 70%;
+  min-height: 40vh;
 }
 .main .trending-container .video-list .video-item .video-main .video-frame .video {
   width: 100%;

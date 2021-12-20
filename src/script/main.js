@@ -217,10 +217,24 @@ $(function () {
         $(window).on('load', function () {
           const videoItems = $('.video-item');
           const videos = videoItems.find('video');
-          [...videos].forEach((video, index) => {
-            $(window).scroll(function () {
-              const { top } = video.getBoundingClientRect();
+          const observer = new IntersectionObserver(entries => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                const mainItem = $(entry.target).parents('.video-item');
+                entry.target.play();
+                // mainItem[0].play();
+                const nextItem = $(mainItem).next();
+                const prevItem = $(mainItem).prev();
+                nextItem[0] && nextItem.find('video')[0].pause();
+                prevItem[0] && prevItem.fin('video')[0].pause();
+
+              }
             })
+          }, {
+            threshold: 1
+          });
+          [...videos].forEach((video, index) => {
+            observer.observe(video);
           })
         })
       },
